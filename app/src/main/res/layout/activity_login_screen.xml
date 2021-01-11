@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F44336"
+    tools:context=".UI.LoginScreen">
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:fontFamily="@font/itimregular"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"/>
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_login"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:hint="Email"
+        android:textStyle="bold"
+        android:fontFamily="@font/itimregular"
+        android:textColorHint="@color/grey"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/edt_pwd"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edt_email"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:hint="Password"
+        android:textStyle="bold"
+        android:fontFamily="@font/itimregular"
+        android:textColorHint="@color/grey"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edt_pwd"
+        android:text="Login"
+        android:textStyle="bold"
+        android:fontFamily="@font/itimregular"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/txt_newuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Here? Create Account"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/itimregular"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbarr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:outlineAmbientShadowColor="#FB0000"
+        android:outlineSpotShadowColor="@color/white"
+        android:layout_below="@+id/linearlayout"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

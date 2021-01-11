@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F44336"
+    tools:context=".UI.RegisterActivity">
+
+    <TextView
+        android:id="@+id/txt_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:fontFamily="@font/itimregular"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_signup"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:hint="Name"
+        android:textStyle="bold"
+        android:fontFamily="@font/itimregular"
+        android:textColorHint="@color/grey"
+        android:inputType="textPersonName"/>
+
+
+    <EditText
+        android:id="@+id/edt_emaill"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edt_name"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:hint="Email"
+        android:textStyle="bold"
+        android:fontFamily="@font/itimregular"
+        android:textColorHint="@color/grey"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/edt_phoneno"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edt_emaill"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:hint="Phone Number"
+        android:textStyle="bold"
+        android:fontFamily="@font/itimregular"
+        android:textColorHint="@color/grey"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edt_phoneno"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:hint="Password"
+        android:textStyle="bold"
+        android:fontFamily="@font/itimregular"
+        android:textColorHint="@color/grey"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/edt_confirmpass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edt_password"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:hint="Confirm Password"
+        android:textStyle="bold"
+        android:fontFamily="@font/itimregular"
+        android:textColorHint="@color/grey"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/edt_dob"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edt_confirmpass"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:hint="Date of Birth"
+        android:textStyle="bold"
+        android:fontFamily="@font/itimregular"
+        android:textColorHint="@color/grey"
+        android:inputType="date"/>
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edt_dob"
+        android:text="Register"
+        android:textStyle="bold"
+        android:fontFamily="@font/itimregular"/>
+
+    <TextView
+        android:id="@+id/txt_loginhere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_register"
+        android:text="Already Signed in? Login Here"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/itimregular"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:outlineAmbientShadowColor="#FB0000"
+        android:outlineSpotShadowColor="@color/white"
+        android:layout_below="@+id/txt_loginhere"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
